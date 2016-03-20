@@ -1,0 +1,130 @@
+/* //////////////////////////    GLOBALS    ////////////////////////// */
+html, body {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 100; }
+
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  background-color: #eee; }
+
+.container-wide {
+  max-width: 1200px;
+  margin: 0px auto;
+  background-color: rgba(100, 100, 180, 0.4); }
+
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+  background-color: rgba(100, 180, 100, 0.4); }
+
+/* //////////////////////////    TEXT STYLES    ////////////////////////// */
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0px 20px 0px; }
+
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 3em; }
+
+h3 {
+  font-size: 2.5em;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 2em; }
+
+h5 {
+  font-size: 1.5em; }
+
+h6 {
+  font-size: 1em;
+  text-transform: uppercase; }
+
+p {
+  font-size: 1em;
+  margin: 10px 0px 10px 0px; }
+
+/* //////////////////////////    LINKS    ////////////////////////// */
+a {
+  font-size: 1em;
+  text-decoration: none; }
+
+a:hover {
+  color: red; }
+
+a:active {
+  color: green; }
+
+/* //////////////////////////    BUTTONS    ////////////////////////// */
+.button {
+  background: #14696f;
+  padding: 10px 25px;
+  color: #fff;
+  -webkit-transition: background 0.5s, border 0.5s;
+          transition: background 0.5s, border 0.5s;
+  border: 1px solid #333;
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  margin: 10px; }
+
+.button:hover {
+  color: #fff;
+  background: red;
+  border: 1px solid #eee; }
+
+/* //////////////////////////    COLORS    ////////////////////////// */
+.color-box {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: inline-block; }
+
+.hp0 {
+  background-color: #27556C; }
+
+.hp1 {
+  background-color: #8FD5F7; }
+
+.hp2 {
+  background-color: #CACED0; }
+
+.hp3 {
+  background-color: #00121B; }
+
+.hp4 {
+  background-color: #00334B; }
+
+.hs10 {
+  background-color: #AA5D39; }
+
+.hs11 {
+  background-color: #FFB28E; }
+
+.hs12 {
+  background-color: #FFFAF8; }
+
+.hs13 {
+  background-color: #2B0E00; }
+
+.hs14 {
+  background-color: #762600; }
+
+.hs20 {
+  background-color: #AA8539; }
+
+.hs21 {
+  background-color: #FFDA8E; }
+
+.hs22 {
+  background-color: #FFFDF8; }
+
+.hs23 {
+  background-color: #2B1D00; }
+
+.hs24 {
+  background-color: #765000; }
