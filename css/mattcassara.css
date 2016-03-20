@@ -1,4 +1,4 @@
-/* ---------------- Globals -----------------*/
+/* //////////////////////////    GLOBALS    ////////////////////////// */
 html, body {
   font-family: "Ubuntu", Arial, Helvetica, sans-serif;
   font-weight: 100;
@@ -7,63 +7,63 @@ html, body {
 * {
   padding: 0px;
   margin: 0px;
-  text-decoration: none;
 }
 
 .container-wide {
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0px auto;
-  /*background-color: rgba(100,100,180, 0.4);*/
+  background-color: rgba(100, 100, 180, 0.4);
 }
 
 .container {
   max-width: 960px;
   margin: 0px auto;
-  /*background-color: rgba(100,180,100, 0.4);*/
+  background-color: rgba(100, 180, 100, 0.4);
 }
 
-/* -------------- Text Styles ----------------- */
+/* //////////////////////////    TEXT STYLES    ////////////////////////// */
 h1 {
-  font-size: 64px;
+  font-size: 4em;
   margin: 40px 0px 40px 0px;
 }
 
 h2 {
-  font-size: 44px;
+  font-size: 3em;
   margin: 10px 0px 30px 0px;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 2.5em;
   margin: 10px 0px 10px 0px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 2em;
   margin: 10px 0px 10px 0px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 2em;
   margin: 10px 0px 10px 0px;
 }
 
 h6 {
-  font-size: 14px;
+  font-size: 1em;
   margin: 10px 0px 10px 0px;
   text-transform: uppercase;
 }
 
 p {
-  font-size: 14px;
+  font-size: 1em;
   margin: 10px 0px 10px 0px;
 }
 
 a {
-  font-size: 14px;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
+/* //////////////////////////    BUTTONS    ////////////////////////// */
 .btn {
   padding: 10px 25px;
   color: #fff;
@@ -98,7 +98,7 @@ a {
   background-color: red;
 }
 
-/* -------------------- Hero Section -------------------------- */
+/* //////////////////////////    HERO SECTION    ////////////////////////// */
 .hero {
   background: url(../img/andes.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -134,7 +134,7 @@ a {
   padding: 100px 0px 100px 0px;
 }
 
-/* -------------------- Intro ------------------------------- */
+/* //////////////////////////    INTRO SECTION    ////////////////////////// */
 .intro {
   background-color: #111;
   padding: 60px 0px 60px 0px;
@@ -164,7 +164,7 @@ a {
   padding: 20px 0px 20px 0px;
 }
 
-/* -------------------- About ------------------------------- */
+/* //////////////////////////    ABOUT   ////////////////////////// */
 .about {
   text-align: center;
   padding: 60px 0px 60px 0px;
@@ -188,7 +188,7 @@ a {
   color: #111;
 }
 
-/* -------------------- Employment ------------------------------- */
+/* //////////////////////////    EMPLOYMENT    ////////////////////////// */
 .employment {
   background-color: #111;
   padding: 60px 0px 60px 0px;
@@ -226,7 +226,7 @@ a {
   color: #fff;
 }
 
-/* -------------------- Employment ------------------------------- */
+/* //////////////////////////    EDUCATION    ////////////////////////// */
 .education {
   background-color: #fff;
   text-align: center;
@@ -237,13 +237,13 @@ a {
   color: #111;
 }
 
-/* -------------------- Contact --------------------------------- */
+/* //////////////////////////    CONTACT    ////////////////////////// */
 .contact {
   background-color: #111;
   padding: 60px 0px 60px 0px;
 }
 
-/* -------------------- Blog ------------------------------- */
+/* //////////////////////////    BLOG    ////////////////////////// */
 .blog {
   background-color: #fff;
   padding: 60px 0px 60px 0px;
@@ -257,7 +257,7 @@ a {
   margin: 0px 0px 20px 0px;
 }
 
-/* -------------------- Footer ------------------------------- */
+/* //////////////////////////    FOOTER   ////////////////////////// */
 .footer {
   background-color: #000;
   padding: 60px 0px 60px 0px;

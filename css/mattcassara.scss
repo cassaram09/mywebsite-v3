@@ -11,7 +11,7 @@ $button-color: #fff;
           background-size: $cover;
 }
 
-/* ---------------- Globals -----------------*/
+/* //////////////////////////    GLOBALS    ////////////////////////// */
 
 html, body {
   font-family: $font-stack;
@@ -21,65 +21,65 @@ html, body {
 *{
 	padding: 0px;
 	margin: 0px;
-	text-decoration: none;
 }
 
 .container-wide {
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0px auto;
-  /*background-color: rgba(100,100,180, 0.4);*/
+  background-color: rgba(100,100,180, 0.4);
 }
 
 .container {
   max-width: 960px;
   margin: 0px auto;
-  /*background-color: rgba(100,180,100, 0.4);*/
+  background-color: rgba(100,180,100, 0.4);
 }
 
-/* -------------- Text Styles ----------------- */
+/* //////////////////////////    TEXT STYLES    ////////////////////////// */
 
 h1{
-	font-size: 64px;
+	font-size: 4em;
 	margin: 40px 0px 40px 0px;
 }
 
 h2{
-	font-size: 44px;
+	font-size: 3em;
 	margin: 10px 0px 30px 0px;
 }
 
 h3{
-	font-size: 28px;
+	font-size: 2.5em;
 	margin: 10px 0px 10px 0px;
 }
 
 h4{
-	font-size: 24px;
+	font-size: 2em;
 	margin: 10px 0px 10px 0px;
 }
 
 h5{
-	font-size: 18px;
+	font-size: 2em;
 	margin: 10px 0px 10px 0px;
 }
 
 h6{
-	font-size: 14px;
+	font-size: 1em;
 	margin: 10px 0px 10px 0px;
 	text-transform: uppercase;
 }
 
 p{
-	font-size: 14px;
+	font-size: 1em;
 	margin: 10px 0px 10px 0px;
 }
 
 a{
-	font-size: 14px;
+	font-size: 1em;
 	text-transform: uppercase;
 }
 
 
+/* //////////////////////////    BUTTONS    ////////////////////////// */
 .btn{
 	padding: 10px 25px;
 	color: #fff;
@@ -120,7 +120,7 @@ a{
 	
 }
 
-/* -------------------- Hero Section -------------------------- */
+/* //////////////////////////    HERO SECTION    ////////////////////////// */
 
 .hero{
 	background: url(../img/andes.jpg) no-repeat center center;
@@ -156,7 +156,8 @@ a{
 .main .content{
 	padding: 100px 0px 100px 0px;
 }
-/* -------------------- Intro ------------------------------- */
+
+/* //////////////////////////    INTRO SECTION    ////////////////////////// */
 
 .intro{
 	background-color: #111;
@@ -186,7 +187,7 @@ a{
 	padding: 20px 0px 20px 0px;
 }
 
-/* -------------------- About ------------------------------- */
+/* //////////////////////////    ABOUT   ////////////////////////// */
 
 .about{
 	text-align: center;
@@ -211,7 +212,7 @@ a{
 	color: #111;
 }
 
-/* -------------------- Employment ------------------------------- */
+/* //////////////////////////    EMPLOYMENT    ////////////////////////// */
 
 .employment{
 	background-color: $primary-color;
@@ -250,7 +251,7 @@ a{
 .employment ul, p, h2, h3, h4{
 	color: #fff;
 }
-/* -------------------- Employment ------------------------------- */
+/* //////////////////////////    EDUCATION    ////////////////////////// */
 
 .education{
 	background-color: #fff;
@@ -262,7 +263,7 @@ a{
 	color: #111;
 }
 
-/* -------------------- Contact --------------------------------- */
+/* //////////////////////////    CONTACT    ////////////////////////// */
 
 .contact{
 	background-color: $primary-color;
@@ -270,7 +271,7 @@ a{
 }
 
 
-/* -------------------- Blog ------------------------------- */
+/* //////////////////////////    BLOG    ////////////////////////// */
 
 .blog{
 	background-color: #fff;
@@ -286,17 +287,7 @@ a{
 }
 
 
-
-
-
-
-
-
-
-
-/* -------------------- Footer ------------------------------- */
-
-
+/* //////////////////////////    FOOTER   ////////////////////////// */
 
 
 .footer{
