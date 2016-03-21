@@ -185,6 +185,12 @@ $rgba-secondary-2-2: rgba(255,253,248,1);
 $rgba-secondary-2-3: rgba( 43, 29,  0,1);
 $rgba-secondary-2-4: rgba(118, 80,  0,1);
 
+$primary-color: #111;
+$second-color: #006bdb;
+$third-color: #ebebeb;
+$accent-color: #eee;
+$second-accent-color: #333;
+
 .content {
 	background: #ddd;
 	padding: 10px;
@@ -197,6 +203,27 @@ $rgba-secondary-2-4: rgba(118, 80,  0,1);
 	margin: 10px 5px;
 	display: inline-block;
 }
+
+.primary-color {
+  background-color: $primary-color;
+}
+
+.second-color {
+  background-color: $second-color;
+}
+
+.third-color {
+  background-color: $third-color;
+}
+
+.accent-color {
+  background-color: $accent-color;
+}
+
+.second-accent-color {
+  background-color: $second-accent-color;
+}
+
 
 .hp0 {
 	background-color: $color-primary-0;

@@ -27,7 +27,7 @@ section {
 .container {
   max-width: 1200px;
   margin: 0px auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent;
 }
 
 /*.grid {
@@ -75,21 +75,18 @@ h6 {
 p {
   font-size: 1em;
   margin: 10px 0px 10px 0px;
+  color: #fff;
 }
 
 a {
   font-size: 1em;
-  text-transform: uppercase;
+  text-decoration: none;
+  color: #006bdb;
 }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    LINKS 	    	//////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
-a {
-  font-size: 1em;
-  text-decoration: none;
-}
-
 a:hover {
   color: red;
 }
@@ -124,7 +121,7 @@ a:active {
 /* //////////////////////////    HEADER & NAV   //////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 #nav-block {
-  background: #769bb3;
+  background: #fff;
   height: 60px;
   width: 100%;
   z-index: 5000;
@@ -139,7 +136,7 @@ a:active {
   width: 50px;
   cursor: pointer;
   z-index: 1010;
-  background: green;
+  background: #006bdb;
 }
 
 .button_container {
@@ -155,28 +152,28 @@ a:active {
 }
 
 .button_container:hover {
-  opacity: .7;
+  opacity: .8;
 }
 
 .button_container.active .top {
   -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
   transform: translateY(11px) translateX(0) rotate(45deg);
-  background: #FFF;
+  background: #006bdb;
 }
 
 .button_container.active .middle {
   opacity: 0;
-  background: #FFF;
+  background: #006bdb;
 }
 
 .button_container.active .bottom {
   -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
   transform: translateY(-11px) translateX(0) rotate(-45deg);
-  background: #FFF;
+  background: #006bdb;
 }
 
 .button_container span {
-  background: white;
+  background: #006bdb;
   border: none;
   height: 5px;
   width: 100%;
@@ -198,7 +195,7 @@ a:active {
 
 .overlay {
   position: fixed;
-  background: #000C14;
+  background: #006bdb;
   top: 0;
   left: 0;
   width: 100%;
@@ -211,7 +208,7 @@ a:active {
 }
 
 .overlay.open {
-  opacity: .9;
+  opacity: 0.95;
   visibility: visible;
   height: 100%;
 }
@@ -314,7 +311,7 @@ a:active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 700px;
+  height: 95vh;
 }
 
 .main-content {
@@ -329,8 +326,10 @@ a:active {
 /* //////////////////////////    INTRO      	//////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .intro {
-  background-color: #769BB3;
+  background-color: #fff;
   text-align: center;
+  color: #111;
+  height: 90vh;
 }
 
 .intro .grid-pad {
@@ -349,7 +348,7 @@ a:active {
   margin: 20px 0px 20px 0px;
   height: 150px;
   border-radius: 100%;
-  border: 2px solid #000C14;
+  border: 2px solid #333;
   transition: border 0.4s;
 }
 
@@ -358,7 +357,7 @@ a:active {
 }
 
 .intro .content img:hover {
-  border: 2px solid #FFFFFF;
+  border: 2px solid #111;
 }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
@@ -366,11 +365,12 @@ a:active {
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .about {
   text-align: justify;
-  background: url("../img/brick.jpg") no-repeat center center fixed;
+  background: linear-gradient(to top, rgba(17, 17, 17, 0), #111111);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 90vh;
 }
 
 .about p {
@@ -382,7 +382,8 @@ a:active {
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .projects {
   text-align: center;
-  background-color: #769BB3;
+  background-color: rgba(17, 17, 17, 0);
+  height: 90vh;
 }
 
 .projects img {
@@ -406,7 +407,7 @@ a:active {
 /* //////////////////////////    EMPLOYMENT     //////////////////////////////////////////////////////////////// */
 /* //////////////////////////					           //////////////////////////////////////////////////////////////// */
 .employment {
-  background-color: #FFD9A3;
+  background-color: #006bdb;
   text-align: left;
 }
 
@@ -414,12 +415,12 @@ a:active {
   margin: 20px 0px 20px 0px;
   height: 125px;
   border-radius: 100%;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #fff;
   transition: border 0.4s;
 }
 
 .employment img:hover {
-  border: 2px solid #769BB3;
+  border: 2px solid #fff;
 }
 
 .employment ul li {
@@ -435,14 +436,18 @@ a:active {
 /* //////////////////////////    CONTACT    	//////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .contact {
-  background-color: #769BB3;
+  background-color: rgba(17, 17, 17, 0);
+}
+
+.contact h2 {
+  color: #fff;
 }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    BLOG 	   	 	//////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .blog {
-  background-color: #769BB3;
+  background-color: #fff;
 }
 
 .blog h2, .blog h3, .blog p {
@@ -457,8 +462,12 @@ a:active {
 /* //////////////////////////    FOOTER     	//////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 footer {
-  background-color: #FFD9A3;
+  background-color: #fff;
   padding: 30px 0px 0px 0px;
+}
+
+footer h6 {
+  color: #006bdb;
 }
 
 /* //////////////////////////					 //////////////////////////////////////////////////////////////// */

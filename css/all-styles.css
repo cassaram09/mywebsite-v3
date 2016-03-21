@@ -130,6 +130,26 @@ a:active {
   display: inline-block;
 }
 
+.primary-color {
+  background-color: #111;
+}
+
+.second-color {
+  background-color: #006bdb;
+}
+
+.third-color {
+  background-color: #ebebeb;
+}
+
+.accent-color {
+  background-color: #eee;
+}
+
+.second-accent-color {
+  background-color: #333;
+}
+
 .hp0 {
   background-color: #27556C;
 }
