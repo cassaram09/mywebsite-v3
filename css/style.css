@@ -1,4 +1,11 @@
-/* //////////////////////////    GLOBALS    ////////////////////////// */
+/*
+  Matt Cassara Stylesheet
+  Author - Matt Cassara
+  Site - http://www.mattcassara.com
+*/
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    GLOBALS     	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
 html, body {
   font-family: "Oxygen", sans-serif;
   font-weight: 100;
@@ -13,23 +20,29 @@ body {
   background-color: #fff;
 }
 
-/*
-.container-wide {
-  max-width: 1200px;
-  margin: 0px auto;
-  background-color: rgba(100,100,180, 0.4);
+section {
+  padding: 30px 0px 30px 0px;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0px auto;
-  background-color: rgba(100,180,100, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
+
+/*.grid {
+	background-color: rgba(50,50,100,0.2)
+}
+
 */
-/* //////////////////////////    COLORS    ////////////////////////// */
-/* //////////////////////////    TEXT STYLES    ////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    COLORS     	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    TEXT STYLES    //////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
 h1 {
-  font-size: 3.8em;
+  font-size: 3.5em;
   margin: 40px 0px 40px 0px;
 }
 
@@ -49,7 +62,7 @@ h4 {
 }
 
 h5 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 10px 0px 10px 0px;
 }
 
@@ -69,7 +82,9 @@ a {
   text-transform: uppercase;
 }
 
-/* //////////////////////////    LINKS    ////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    LINKS 	    	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
 a {
   font-size: 1em;
   text-decoration: none;
@@ -83,13 +98,16 @@ a:active {
   color: green;
 }
 
-/* //////////////////////////    BUTTONS    ////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    BUTTONS     	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .button {
-  background: #14696f;
+  background: transparent;
   padding: 10px 25px;
-  color: #fff;
-  transition: background 0.5s, border 0.5s;
-  border: 1px solid #333;
+  color: #000;
+  font-weight: 800;
+  transition: background 0.5s, border 0.5s, color 0.5s;
+  border: 3px solid #000;
   display: block;
   max-width: 200px;
   text-align: center;
@@ -97,24 +115,37 @@ a:active {
 }
 
 .button:hover {
-  color: #fff;
-  background: red;
-  border: 1px solid #eee;
+  color: #000;
+  background: #ddd;
+  border: 3px solid #333;
 }
 
-/* //////////////////////////    HEADER AND NAVIGATION   ////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    HEADER & NAV   //////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
 #nav-block {
-  background: rgba(0, 0, 0, 0.3);
-  height: 50px;
+  background: #769bb3;
+  height: 60px;
   width: 100%;
   z-index: 5000;
   position: fixed;
 }
 
+#logo {
+  position: absolute;
+  top: 15px;
+  left: 10%;
+  height: 25px;
+  width: 50px;
+  cursor: pointer;
+  z-index: 1010;
+  background: green;
+}
+
 .button_container {
   position: absolute;
-  top: 12px;
-  right: 15%;
+  top: 17px;
+  right: 10%;
   height: 27px;
   width: 35px;
   cursor: pointer;
@@ -145,7 +176,7 @@ a:active {
 }
 
 .button_container span {
-  background: #762600;
+  background: white;
   border: none;
   height: 5px;
   width: 100%;
@@ -167,7 +198,7 @@ a:active {
 
 .overlay {
   position: fixed;
-  background: #00334B;
+  background: #000C14;
   top: 0;
   left: 0;
   width: 100%;
@@ -274,149 +305,144 @@ a:active {
   }
 }
 
-/* //////////////////////////    MAIN SECTION    ////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    MAIN 	    	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .main {
+  background: url("../img/brooklyn-bridge.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 700px;
+}
+
+.main-content {
+  margin-top: 10%;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    INTRO      	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+.intro {
+  background-color: #769BB3;
+  text-align: center;
+}
+
+.intro .grid-pad {
+  padding-bottom: 10px;
+}
+
+.intro .col-1-3 {
+  padding-bottom: 10px;
+}
+
+.intro .col-1-3 li {
+  list-style: none;
+}
+
+.intro .content img {
+  margin: 20px 0px 20px 0px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px solid #000C14;
+  transition: border 0.4s;
+}
+
+.intro .col-2-12 .content {
+  text-align: center;
+}
+
+.intro .content img:hover {
+  border: 2px solid #FFFFFF;
+}
+
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    ABOUT      	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+.about {
+  text-align: justify;
   background: url("../img/brick.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 600px;
 }
 
-.grid {
-  background: blue;
-}
-
-/* //////////////////////////    INTRO SECTION    ////////////////////////// */
-.intro {
-  padding: 60px 0px 60px 0px;
-  text-align: center;
-}
-
-.intro .content img {
+.about p {
   margin: 20px 0px 20px 0px;
-  height: 300px;
-  border-radius: 100%;
-  border: 2px solid #aaa;
-  transition: border 0.4s, box-shadow 0.4s, transform 0.4s;
-  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
 }
 
-.intro .content img:hover {
-  border: 2px solid #aaa;
-  box-shadow: 8px 8px 2px #141414;
-  transform: scale(1.05, 1.05);
-}
-
-/* //////////////////////////    ABOUT   ////////////////////////// */
-.about {
-  text-align: center;
-  background-color: #ddd;
-}
-
-.about img {
-  height: 100px;
-}
-
-.about .content {
-  border: 2px solid #aaa;
-  padding: 20px 0px 10px 0px;
-  transition: border 0.4s;
-}
-
-.about .content:hover {
-  border: 2px solid red;
-}
-
-.about p, .about h2, .about h3 {
-  color: #111;
-}
-
-.grid {
-  padding-bottom: 10px;
-}
-
-/* //////////////////////////    PROJECTS   ////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    PROJECTS     	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .projects {
   text-align: center;
+  background-color: #769BB3;
 }
 
 .projects img {
-  height: 100px;
+  width: 100%;
 }
 
-.projects .content {
-  border: 2px solid #aaa;
+.projects .col-1-6 .content {
   padding: 20px 0px 10px 0px;
-  transition: border 0.4s;
+  transition: background 0.4s;
 }
 
-.projects .content:hover {
-  border: 2px solid red;
+.projects .col-1-6 .content:hover {
+  background: red;
 }
 
 .projects p, .projects h2, .projects h3 {
   color: #111;
 }
 
-/* //////////////////////////    EMPLOYMENT    ////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    EMPLOYMENT     //////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .employment {
-  background-color: #ddd;
+  background-color: #FFD9A3;
+  text-align: left;
 }
 
 .employment img {
   margin: 20px 0px 20px 0px;
-  height: 200px;
+  height: 125px;
   border-radius: 100%;
-  border: 2px solid #aaa;
-  transition: border 0.4s, box-shadow 0.4s, transform 0.4s;
-  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
+  border: 2px solid #FFFFFF;
+  transition: border 0.4s;
 }
 
 .employment img:hover {
-  border: 2px solid red;
-  box-shadow: 8px 8px 2px #141414;
-  transform: scale(1.05, 1.05);
+  border: 2px solid #769BB3;
 }
 
-.employment ul {
-  list-style-type: square #fff;
-  padding: 0px 20px 20px 20px;
-}
-
-.employment-logo {
-  text-align: center;
-}
-
-.employment h2 {
-  text-align: center;
+.employment ul li {
+  list-style-type: none;
+  padding: 0px 0px 20px 0px;
 }
 
 .employment ul, p, h2, h3, h4 {
   color: #fff;
 }
 
-/* //////////////////////////    EDUCATION    ////////////////////////// */
-.education {
-  background-color: #ddd;
-  text-align: center;
-  padding: 60px 0px 60px 0px;
-}
-
-.education h2, .education h3, .education p {
-  color: #111;
-}
-
-/* //////////////////////////    CONTACT    ////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    CONTACT    	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .contact {
-  padding: 60px 0px 60px 0px;
+  background-color: #769BB3;
 }
 
-/* //////////////////////////    BLOG    ////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    BLOG 	   	 	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .blog {
-  background-color: #ddd;
-  padding: 60px 0px 60px 0px;
+  background-color: #769BB3;
 }
 
 .blog h2, .blog h3, .blog p {
@@ -427,13 +453,19 @@ a:active {
   margin: 0px 0px 20px 0px;
 }
 
-/* //////////////////////////    FOOTER   ////////////////////////// */
-.footer {
-  background-color: #000;
-  padding: 60px 0px 60px 0px;
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* //////////////////////////    FOOTER     	//////////////////////////////////////////////////////////////// */
+/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+footer {
+  background-color: #FFD9A3;
+  padding: 30px 0px 0px 0px;
 }
 
-.credit {
-  font-size: 8px;
-  color: #888;
+/* //////////////////////////					 //////////////////////////////////////////////////////////////// */
+/* //////////////////////////    MEDIA QUERIES   //////////////////////////////////////////////////////////////// */
+/* //////////////////////////					 //////////////////////////////////////////////////////////////// */
+@media only screen and (max-width: 767px) {
+  .main-content {
+    margin-top: 25%;
+  }
 }
