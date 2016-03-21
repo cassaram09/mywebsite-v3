@@ -1,6 +1,6 @@
 /* //////////////////////////    GLOBALS    ////////////////////////// */
 html, body {
-  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-weight: 100;
 }
 
@@ -9,21 +9,27 @@ html, body {
   margin: 0px;
 }
 
+body {
+  background-color: #fff;
+}
+
+/*
 .container-wide {
   max-width: 1200px;
   margin: 0px auto;
-  background-color: rgba(100, 100, 180, 0.4);
+  background-color: rgba(100,100,180, 0.4);
 }
 
 .container {
   max-width: 960px;
   margin: 0px auto;
-  background-color: rgba(100, 180, 100, 0.4);
+  background-color: rgba(100,180,100, 0.4);
 }
-
+*/
+/* //////////////////////////    COLORS    ////////////////////////// */
 /* //////////////////////////    TEXT STYLES    ////////////////////////// */
 h1 {
-  font-size: 4em;
+  font-size: 3.8em;
   margin: 40px 0px 40px 0px;
 }
 
@@ -63,85 +69,232 @@ a {
   text-transform: uppercase;
 }
 
+/* //////////////////////////    LINKS    ////////////////////////// */
+a {
+  font-size: 1em;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: green;
+}
+
 /* //////////////////////////    BUTTONS    ////////////////////////// */
-.btn {
+.button {
+  background: #14696f;
   padding: 10px 25px;
   color: #fff;
-  transition: border 0.4s;
-  border: 1px solid #fff;
+  transition: background 0.5s, border 0.5s;
+  border: 1px solid #333;
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  margin: 10px auto;
 }
 
-.btn-white {
-  background-color: #fff;
-  border: 1px solid #fff;
+.button:hover {
+  color: #fff;
+  background: red;
+  border: 1px solid #eee;
 }
 
-.btn-white:hover {
-  border: 1px solid #111;
+/* //////////////////////////    HEADER AND NAVIGATION   ////////////////////////// */
+#nav-block {
+  background: rgba(0, 0, 0, 0.3);
+  height: 50px;
+  width: 100%;
+  z-index: 5000;
+  position: fixed;
 }
 
-/*
-.btn-clear{
-	border: 1px solid #111;
-	background-color: transparent;
+.button_container {
+  position: absolute;
+  top: 12px;
+  right: 15%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 
-.btn-clear:hover{
-	border: 1px solid #fff; 
-}
-*/
-.col-4-12 {
-  background-color: red;
+.button_container:hover {
+  opacity: .7;
 }
 
-.col-8-12 {
-  background-color: red;
+.button_container.active .top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
 }
 
-/* //////////////////////////    HERO SECTION    ////////////////////////// */
-.hero {
-  background: url(../img/andes.jpg) no-repeat center center;
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+
+.button_container.active .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+
+.button_container span {
+  background: #762600;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background: #00334B;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+}
+
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+
+.overlay.open li {
+  -webkit-animation: fadeInTop 0.5s ease forwards;
+  animation: fadeInTop 0.5s ease forwards;
+  -webkit-animation-delay: .35s;
+  animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: .45s;
+  animation-delay: .45s;
+}
+
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: .50s;
+  animation-delay: .50s;
+}
+
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-family: 'Oxygen', serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+@-webkit-keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    top: 20%;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+/* //////////////////////////    MAIN SECTION    ////////////////////////// */
+.main {
+  background: url("../img/brick.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -ms-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  text-align: center;
-  padding: 20px 0px 200px 0px;
+  height: 600px;
 }
 
-.hero ul {
-  list-style: none;
-  text-align: right;
-  padding: 9px 0px 9px 0px;
-}
-
-.hero ul li {
-  display: inline-block;
-  color: #fff;
-  font-size: 16px;
-  margin: 0px 0px 0px 20px;
-}
-
-.logo {
-  text-align: left;
-}
-
-.header {
-  background-color: rgba(100, 100, 100, 0.4);
-}
-
-.main .content {
-  padding: 100px 0px 100px 0px;
+.grid {
+  background: blue;
 }
 
 /* //////////////////////////    INTRO SECTION    ////////////////////////// */
 .intro {
-  background-color: #111;
   padding: 60px 0px 60px 0px;
   text-align: center;
 }
 
-.intro img {
+.intro .content img {
   margin: 20px 0px 20px 0px;
   height: 300px;
   border-radius: 100%;
@@ -150,24 +303,16 @@ a {
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
 }
 
-.intro img:hover {
+.intro .content img:hover {
   border: 2px solid #aaa;
   box-shadow: 8px 8px 2px #141414;
   transform: scale(1.05, 1.05);
 }
 
-.intro h2 {
-  color: #fff;
-}
-
-.intro-content {
-  padding: 20px 0px 20px 0px;
-}
-
 /* //////////////////////////    ABOUT   ////////////////////////// */
 .about {
   text-align: center;
-  padding: 60px 0px 60px 0px;
+  background-color: #ddd;
 }
 
 .about img {
@@ -181,17 +326,43 @@ a {
 }
 
 .about .content:hover {
-  border: 2px solid #111;
+  border: 2px solid red;
 }
 
 .about p, .about h2, .about h3 {
   color: #111;
 }
 
+.grid {
+  padding-bottom: 10px;
+}
+
+/* //////////////////////////    PROJECTS   ////////////////////////// */
+.projects {
+  text-align: center;
+}
+
+.projects img {
+  height: 100px;
+}
+
+.projects .content {
+  border: 2px solid #aaa;
+  padding: 20px 0px 10px 0px;
+  transition: border 0.4s;
+}
+
+.projects .content:hover {
+  border: 2px solid red;
+}
+
+.projects p, .projects h2, .projects h3 {
+  color: #111;
+}
+
 /* //////////////////////////    EMPLOYMENT    ////////////////////////// */
 .employment {
-  background-color: #111;
-  padding: 60px 0px 60px 0px;
+  background-color: #ddd;
 }
 
 .employment img {
@@ -204,7 +375,7 @@ a {
 }
 
 .employment img:hover {
-  border: 2px solid #111;
+  border: 2px solid red;
   box-shadow: 8px 8px 2px #141414;
   transform: scale(1.05, 1.05);
 }
@@ -228,7 +399,7 @@ a {
 
 /* //////////////////////////    EDUCATION    ////////////////////////// */
 .education {
-  background-color: #fff;
+  background-color: #ddd;
   text-align: center;
   padding: 60px 0px 60px 0px;
 }
@@ -239,13 +410,12 @@ a {
 
 /* //////////////////////////    CONTACT    ////////////////////////// */
 .contact {
-  background-color: #111;
   padding: 60px 0px 60px 0px;
 }
 
 /* //////////////////////////    BLOG    ////////////////////////// */
 .blog {
-  background-color: #fff;
+  background-color: #ddd;
   padding: 60px 0px 60px 0px;
 }
 

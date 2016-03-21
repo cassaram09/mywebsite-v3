@@ -5,91 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/simplegrid.css">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic' rel='stylesheet' type='text/css'>
-
   </head>
   <body>
 
-    <div class="hero" id="top">
-      <div class="container-wide">
-
-        <div class="header grid grid-pad">
-          <div class="col-4-12">
-            <div class="content logo">
-              <p>Matt Cassara</p>
-            </div>
-          </div>
-          <div class="col-8-12">
-            <div class="content">
-              <ul>
-                <a href="#about-section"><li>About</li></a>
-                <a href="#contact-section"><li>Projects</li></a>
-                <a href="#employment-section"><li>Employment</li></a>
-                <a href="#education-section"><li>Education</li></a>
-                <a href="#contact-section"><li>Contact</li></a>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="main grid grid-pad">
-          <div class="col-1-1">
-            <div class="content">
-              <h1>Hello!</h1>
-              <a href="#" class="btn btn-clear">Learn More</a>
-            </div>
-          </div>
-        </div>
+    <div id="nav-block">
+      <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
       </div>
     </div>
 
-    <div class="intro" id="intro-section">
-      <div class="container">
-        <div class="intro-content">
-          <img src="img/matt.jpg" alt="matt cassara">
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main">
+    </div>
+
+    <div class="grid grid-pad intro">
+      <div class="col-1-1">
+        <div class="content">
+          <img src="img/matt.jpg" alt="matt cassara"/>
           <h2>Matt Cassara</h2>
-          <a class="btn" href="http://mattcassara.com/wp-content/uploads/2015/09/Resume_v17.pdf" target="_blank">Download Resume</a>
+          <a class="button" href="http://mattcassara.com/wp-content/uploads/2015/09/Resume_v17.pdf" target="_blank">Download Resume</a>
         </div>
       </div>
     </div>
 
-    <div class="about" id="about-section">
-      <div class="container">
-        <div class="about-content">
+    <div class="grid grid-pad about">
+      <div class="col-1-1">
+        <div class="content">
           <h2>A little bit about me</h2>
           <p>Born and raised in Brooklyn, New York, I've been working in the digital field for over 3 years. I hold a B.S. in Business Management with a concentration in Marketing from Marist College in Poughkeepsie, New York. I also studied at London South Bank University for 6 months (though I wish I could have stayed longer).</p>
           <p>I’m an ambitious team player with excellent communication skills, a high attention to detail, a great work ethic and an ability to thrive in fast paced, challenging environments. I have a passion to create excellent work and am driven to succeed at whatever I do.</p>
           <p>When I'm not working, I enjoy powerlifting, reading nonfiction books, jamming out on a few different instruments, snowboarding, travelling, playing videogames and working on my coding and web development skills.</p>
           <h3>Some of my technical skills include:</h3>
         </div>
-        <div class="grid grid-pad">
-          <div class="col-1-3">
-            <div class="content">
-              <img src="svg/html25.svg" alt="web development">
-              <p>web development</p>
-            </div>
+      <div class="grid grid-pad about">
+        <div class="col-1-3">
+          <div class="content">
+            <img src="svg/html25.svg" alt="web development">
+            <p>web development</p>
           </div>
-          <div class="col-1-3">
-            <div class="content">
-              <img src="svg/monitor7.svg" alt="marketing">
-              <p>Marketing</p>
-            </div>
+        </div>
+        <div class="col-1-3">
+          <div class="content">
+            <img src="svg/monitor7.svg" alt="marketing">
+            <p>Marketing</p>
           </div>
-          <div class="col-1-3">
-            <div class="content">
-              <img src="svg/list6.svg" alt="project management">
-              <p>Project Management</p>
-            </div>
+        </div>
+        <div class="col-1-3">
+          <div class="content">
+            <img src="svg/list6.svg" alt="project management">
+            <p>Project Management</p>
           </div>
         </div>
       </div>
     </div>
+    </div>
 
-    <div class="projects" id="projects-section">
-      <div class="container">
-        <div class="projects-content">
+    <div class="grid grid-pad projects">
+      <div class="col-1-1">
+        <div class="content">
           <h2>A little bit about me</h2>
           <p>Born and raised in Brooklyn, New York, I've been working in the digital field for over 3 years. I hold a B.S. in Business Management with a concentration in Marketing from Marist College in Poughkeepsie, New York. I also studied at London South Bank University for 6 months (though I wish I could have stayed longer).</p>
         </div>
@@ -116,9 +104,13 @@
       </div>
     </div>
 
-    <div class="employment" id="employment-section">
-      <div class="container">
-        <h2> Employment History </h2>
+    <div class="grid grid-pad employment">
+
+      <div class="col-1-1">
+        <div class="content">
+          <h2> Employment History </h2>
+        </div>
+
         <div class="grid grid-pad">
           <div class="col-4-12 employment-logo">
             <div class="content">
@@ -226,9 +218,12 @@
       </div>
     </div>
 
-    <div class="education" id="education-section">
-      <div class="container">
-      <h2>Education</h2>
+    <section class="grid grid-pad education">
+      <div class="col-1-1">
+        <div class="content">
+          <h2>Education</h2>
+        </div>
+
         <div class="grid grid-pad">
           <div class="col-1-2">
             <div class="content">
@@ -244,10 +239,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="contact" id="contact-section">
-      <div class="container">
+    <section class="grid grid-pad contact">
+      <div class="col-1-1">
         <h2> Contact me! </h2>
         <div class="formgroup">
           <form>
@@ -255,10 +250,10 @@
           </form>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="blog" id="recent-posts">
-      <div class="container">
+    <section class="grid grid-pad blog" id="recent-posts">
+      <div class="col-1-1">
         <h2> Recent Posts </h2>
         <div class="grid grid-pad">
           <div class="col-10-12">
@@ -272,7 +267,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
 
     <div class="footer">
@@ -280,6 +275,12 @@
         
       </div>
     </div>
+    
+    <!-- Scripts -->
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
+    <script type="text/javascript" src="js/nav.js"></script>
 
   </body>
 </html>
