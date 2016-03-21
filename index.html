@@ -3,14 +3,15 @@
   <head>
     <title>Matt Cassara</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta lang="en">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/simplegrid.css">
   </head>
   <body>
-    <header>
+    <!-- HEADER START -->
+    <header> 
       <div id="nav-block">
         <div class="button_container" id="toggle">
           <span class="top"></span>
@@ -20,9 +21,6 @@
         <a id="logo" href="#home">
         </a>
       </div>
-
-      
-
       <div class="overlay" id="overlay">
         <nav class="overlay-menu">
           <ul>
@@ -34,7 +32,9 @@
         </nav>
       </div>
     </header>
-
+    <!-- HEADER END -->
+    
+    <!-- MAIN START -->
     <section class="main" id="home">
       <div class="container main-content">
         <h1>Matt Cassara</h1>
@@ -42,55 +42,48 @@
         <a class="button" href="#">Learn More</a>
       </div>
     </section>
-
-    <section class="intro" id="intro">
+    <!-- MAIN END -->
+    
+    <!-- INTRO START -->
+    <section class="intro" id="intro"> 
       <div class="grid grid-pad">
-        <div class="col-2-12">
-          <div class="content">
-            <img src="img/matt.jpg" alt="matt cassara"/>
-          </div>
+        <div class="col-2-12"> <!--profile image -->
+          <img src="img/matt.jpg" alt="matt cassara"/>
         </div>
-
-        <div class="col-10-12">
-          <div class="content">
-            <h2>I'm skilled in...</h2>
-              <div class="grid grid-pad">
-                <div class="col-1-3">
-                  <div class="content">
-                    <h5>Web Development</h5>
-                    <ul>
-                      <li>Ruby, Javascript, PHP, MySQL</li>
-                      <li>HTML5, CSS3, SASS</li>
-                      <li>Rails. Sinatra, Angular JS, Jquery</li>
-                      <li>Git, Wordpress</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-1-3">
-                  <div class="content">
-                    <h5>Project Management</h5>
-                    <ul>
-                      <li>Certified Associate Project Manager</li>
-                      <li>March 2015, PMI</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-1-3">
-                  <div class="content">
-                    <h5>Marketing</h5>
-                    <ul>
-                      <li>Social Media</li>
-                      <li>Email Marketing</li>
-                      <li>Google Analytics</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-          </div>
+        <div class="col-10-12"> <!--skills section -->
+          <h2>I'm skilled in...</h2>
+          <div class="grid grid-pad"> <!--nested skills columns -->
+            <div class="col-1-3">
+              <h5>Web Development</h5>
+              <ul>
+                <li>Ruby, Javascript, PHP, MySQL</li>
+                <li>HTML5, CSS3, SASS</li>
+                <li>Rails. Sinatra, Angular JS, Jquery</li>
+                <li>Git, Wordpress</li>
+              </ul>
+            </div>
+            <div class="col-1-3">
+              <h5>Project Management</h5>
+              <ul>
+                <li>Certified Associate Project Manager</li>
+                <li>March 2015, PMI</li>
+              </ul>
+            </div>
+            <div class="col-1-3">
+              <h5>Marketing</h5>
+              <ul>
+                <li>Social Media</li>
+                <li>Email Marketing</li>
+                <li>Google Analytics</li>
+              </ul>
+            </div>
+           </div>  <!--end nested skills section -->  
         </div>
-      </div>
+      </div> <!--end parent grid-->
     </section>
-
+    <!-- INTRO END -->
+    
+    <!-- ABOUT START -->
     <section class="about" id="about">
       <div class="grid grid-pad">
         <h2>Who am I?</h2>
@@ -100,136 +93,101 @@
         <p>When I'm not working, I enjoy powerlifting, reading nonfiction books, jamming out on a few different instruments, snowboarding, travelling, playing videogames and working on my coding and web development skills.</p>
       </div>
     </section>
-
+    <!-- ABOUT END -->
+    
+    <!-- PROJECTS START -->
     <section class="projects" id="projects"> 
       <div class="grid grid-pad">
         <div class="col-1-1">
-          <div class="content">
-            <h2>I've worked with... </h2>
-          </div>
-
-          <div class="grid grid-pad">
+          <h2>I've worked with... </h2>
+          <div class="grid grid-pad"> <!-- nested columns for projects -->
             <div class="col-1-6">
-              <div class="content">
-                <img src="img/tao.jpg" alt="web development">
-                <p>TAO Group</p>
-              </div>
+              <img src="img/tao.jpg" alt="web development">
+              <p>TAO Group</p>
             </div>
             <div class="col-1-6">
-              <div class="content">
-                <img src="img/eds.jpg" alt="web development">
-                <p>Explore Deep Space</p>
-              </div>
+              <img src="img/eds.jpg" alt="web development">
+              <p>Explore Deep Space</p>
             </div>
             <div class="col-1-6">
-              <div class="content">
-                <img src="img/pa.png" alt="web development">
-                <p>Portfolio Aspen</p>
-              </div>
+              <img src="img/pa.png" alt="web development">
+              <p>Portfolio Aspen</p>
             </div>
             <div class="col-1-6">
-              <div class="content">
-                <img src="img/spdji.png" alt="web development">
-                <p>S&P Dow Jones Indices</p>
-              </div>
+              <img src="img/spdji.png" alt="web development">
+              <p>S&P Dow Jones Indices</p>
             </div>
             <div class="col-1-6">
-              <div class="content">
-                <img src="img/hcgg.png" alt="web development">
-                <p>Hill Country Golf & Guitar</p>
-              </div>
+              <img src="img/hcgg.png" alt="web development">
+              <p>Hill Country Golf & Guitar</p>
             </div>
             <div class="col-1-6">
-              <div class="content">
-                <img src="img/spdji.png" alt="web development">
-                <p>Upsilon Ventures</p>
-              </div>
+              <img src="img/spdji.png" alt="web development">
+              <p>Upsilon Ventures</p>
             </div>
-          </div>
-            
-         
-
+          </div> <!-- end nested columns for projects -->
         </div>
-      </div>
+      </div> <!-- end parent grid -->
     </section>
-
+    <!-- PROJECTS END -->
+    
+    <!-- EMPLOYMENT START -->
     <section class="employment" id="employment">
-      <div class="grid grid-pad">
-
+      <div class="grid grid-pad"> <!-- start parent grid -->
         <div class="col-1-1">
-          <div class="content">
-            <h2> My recent work experience includes... </h2>
-          </div>
-
-          <div class="grid grid-pad">
+          <h2> My recent work experience includes... </h2>
+          <div class="grid grid-pad"> <!-- started nested columns grid -->
             <div class="col-3-12">
-              <div class="content">
-                <div class="content">
-                  <img src="http://www.tvidesigns.com/v4/wp-content/themes/master/_img/fb-logo_opengraph.jpg" alt="TVI Designs Logo">
-                </div>
-                <h4>Operations Manager</h4>
-                <h5>TVI Designs</h5>
-                <p>August 2015 - Present</p>
-                <ul>
-                  <li>I manage our production team, allocate resources, and monitor workflows and
-                    output to ensure all projects are being successfully delivered.</li>
-                  <li>Biggest Achievement: Spearheaded a company-wide effort to implement a new project management system to replace the company's existing legacy system. This resulted in increased effectiveness managing projects, 200% increase in time logging by team members, and overall increased satisfaction from team members and clients.</li>
-                </ul>
-              </div>
+              <img src="http://www.tvidesigns.com/v4/wp-content/themes/master/_img/fb-logo_opengraph.jpg" alt="TVI Designs Logo">
+              <h4>Operations Manager</h4>
+              <h5>TVI Designs</h5>
+              <p>August 2015 - Present</p>
+              <ul>
+                <li>I manage our production team, allocate resources, and monitor workflows and
+                  output to ensure all projects are being successfully delivered.</li>
+                <li>Biggest Achievement: Spearheaded a company-wide effort to implement a new project management system to replace the company's existing legacy system. This resulted in increased effectiveness managing projects, 200% increase in time logging by team members, and overall increased satisfaction from team members and clients.</li>
+              </ul>
             </div>
             <div class="col-3-12">
-              <div class="content">
-                <div class="content">
-                  <img src="http://www.tvidesigns.com/v4/wp-content/themes/master/_img/fb-logo_opengraph.jpg" alt="TVI Designs Logo">
-                </div>
-                <h4>Project </br>Manager</h4>
-                <h5>TVI Designs</h5>
-                <p>September 2013 - August 2015</p>
-                <ul>
-                  <li>Manage production team, allocate resources and monitor workflows and
-                    output to ensure all projects are being successfully delivered</li>
-                  <li>Biggest Achievement: Became a Certified Associate Project Manager to increase my management effectiveness</li>
-  
-                </ul>
-              </div>
+              <img src="http://www.tvidesigns.com/v4/wp-content/themes/master/_img/fb-logo_opengraph.jpg" alt="TVI Designs Logo">
+              <h4>Project </br>Manager</h4>
+              <h5>TVI Designs</h5>
+              <p>September 2013 - August 2015</p>
+              <ul>
+                <li>Manage production team, allocate resources and monitor workflows and
+                  output to ensure all projects are being successfully delivered</li>
+                <li>Biggest Achievement: Became a Certified Associate Project Manager to increase my management effectiveness</li>
+              </ul>
             </div>
-
             <div class="col-3-12">
-              <div class="content">
-                <div class="content">
-                  <img src="http://www.tvidesigns.com/v4/wp-content/themes/master/_img/fb-logo_opengraph.jpg" alt="TVI Designs Logo">
-                </div>
-                <h4>Marketing Coordinator</h4>
-                <h5>TVI Designs</h5>
-                <p>June 2013 - August 2013</p>
-                <ul>
-                  <li>Manage production team, allocate resources and monitor workflows and
-                    output to ensure all projects are being successfully delivered</li>
-                  <li>Biggest Achievement: Successfully managed a few small projects to get my feet wet.</li>
-                </ul>
-              </div>
+              <img src="http://www.tvidesigns.com/v4/wp-content/themes/master/_img/fb-logo_opengraph.jpg" alt="TVI Designs Logo">
+              <h4>Marketing Coordinator</h4>
+              <h5>TVI Designs</h5>
+              <p>June 2013 - August 2013</p>
+              <ul>
+                <li>Manage production team, allocate resources and monitor workflows and
+                  output to ensure all projects are being successfully delivered</li>
+                <li>Biggest Achievement: Successfully managed a few small projects to get my feet wet.</li>
+              </ul>
             </div>
-
             <div class="col-3-12">
-              <div class="content">
-                <div class="content">
-                  <img src="img/learner-first-logo.png" alt="Learner First Logo">
-                </div>
-                <h4>Marketing Coordinator</h4>
-                <h5>Learner First</h5>
-                <p>June 2012 - June 2013</p>
-                <ul>
-                  <li>Manage production team, allocate resources and monitor workflows and
-                    output to ensure all projects are being successfully delivered</li>
-                  <li>Biggest Achievement: Setup the company's blog, email marketing, social media presence.</li>
-                </ul>
-              </div>
+              <img src="img/learner-first-logo.png" alt="Learner First Logo">
+              <h4>Marketing Coordinator</h4>
+              <h5>Learner First</h5>
+              <p>June 2012 - June 2013</p>
+              <ul>
+                <li>Manage production team, allocate resources and monitor workflows and
+                  output to ensure all projects are being successfully delivered</li>
+                <li>Biggest Achievement: Setup the company's blog, email marketing, social media presence.</li>
+              </ul>
             </div>
-
+          </div><!-- end nested columns grid -->
         </div>
-      </div>
+      </div> <!-- end parent grid -->
     </section>
-
+    <!-- EMPLOYMENT END -->
+    
+    <!-- CONTACT START -->
     <section class="contact" id="contact">
       <div class="grid grid-pad">
         <div class="col-1-1">
@@ -242,42 +200,39 @@
         </div>
       </div>
     </section>
-
+    <!-- CONTACT END -->
+    
+    <!-- BLOG START-->
     <section class="blog">
       <div class="grid grid-pad" id="recent-posts">
         <div class="col-1-1">
           <h2> Recent Posts </h2>
           <div class="grid grid-pad">
             <div class="col-10-12">
-              <div class="content">
-                <h3>Sample Blog Title</h3>
-                <p>Date</p>
-                <p>Bacon ipsum dolor amet pork venison tri-tip fatback, pork belly short ribs pork chop cupim hamburger cow ham tenderloin beef ribs landjaeger. Hamburger pastrami shankle, cow salami biltong sirloin ball tip rump pork ribeye ham. Ball tip chuck meatloaf pork chop shankle kevin chicken sirloin ham brisket andouille. Spare ribs pork loin swine, venison tail pig brisket porchetta cow. Doner pork belly strip steak, biltong jowl corned beef filet mignon salami fatback short loin short ribs meatloaf beef alcatra chuck.
+              <h3>Sample Blog Title</h3>
+              <p>Date</p>
+              <p>Bacon ipsum dolor amet pork venison tri-tip fatback, pork belly short ribs pork chop cupim hamburger cow ham tenderloin beef ribs landjaeger. Hamburger pastrami shankle, cow salami biltong sirloin ball tip rump pork ribeye ham. Ball tip chuck meatloaf pork chop shankle kevin chicken sirloin ham brisket andouille. Spare ribs pork loin swine, venison tail pig brisket porchetta cow. Doner pork belly strip steak, biltong jowl corned beef filet mignon salami fatback short loin short ribs meatloaf beef alcatra chuck.
 
-                Frankfurter kevin drumstick turducken. Capicola spare ribs cupim, drumstick shoulder beef ribs fatback kielbasa pig jerky pastrami. Turkey salami kevin, shoulder meatloaf tail pork loin. Pastrami chicken pancetta beef meatball jowl pork loin venison bresaola ball tip chuck landjaeger. Andouille beef ribs pork loin, tri-tip tongue brisket ribeye hamburger filet mignon ground round frankfurter. Bresaola boudin jerky pork.</p>
-              </div>
+              Frankfurter kevin drumstick turducken. Capicola spare ribs cupim, drumstick shoulder beef ribs fatback kielbasa pig jerky pastrami. Turkey salami kevin, shoulder meatloaf tail pork loin. Pastrami chicken pancetta beef meatball jowl pork loin venison bresaola ball tip chuck landjaeger. Andouille beef ribs pork loin, tri-tip tongue brisket ribeye hamburger filet mignon ground round frankfurter. Bresaola boudin jerky pork.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <!-- BLOG END-->
+    
+    <!-- FOOTER START-->
     <footer>
-      <div class="grid grid-pad">
-        <div class="col-1-1">
-          <div class="content">
-            <h6>&copy; Matt Cassara 2016.</h6>
-          </div>
-        </div>
+      <div class="container">
+        <h6>&copy; Matt Cassara 2016.</h6>
       </div>
     <footer>
+    <!-- FOOTER END-->
     
-    <!-- Scripts -->
-
+    <!-- SCRIPTS-->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
-
   </body>
 </html>
