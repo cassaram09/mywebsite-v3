@@ -8,27 +8,22 @@
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 html, body {
   font-family: "Oxygen", sans-serif;
-  font-weight: 100;
-}
+  font-weight: 100; }
 
 * {
   padding: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
 
 body {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 section {
-  padding: 30px 0px 30px 0px;
-}
+  padding: 30px 0px 30px 0px; }
 
 .container {
   max-width: 1200px;
   margin: 0px auto;
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 /*.grid {
 	background-color: rgba(50,50,100,0.2)
@@ -43,57 +38,47 @@ section {
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 h1 {
   font-size: 3.5em;
-  margin: 40px 0px 40px 0px;
-}
+  margin: 40px 0px 40px 0px; }
 
 h2 {
   font-size: 3em;
-  margin: 10px 0px 30px 0px;
-}
+  margin: 10px 0px 30px 0px; }
 
 h3 {
   font-size: 2.5em;
-  margin: 10px 0px 10px 0px;
-}
+  margin: 10px 0px 10px 0px; }
 
 h4 {
   font-size: 2em;
-  margin: 10px 0px 10px 0px;
-}
+  margin: 10px 0px 10px 0px; }
 
 h5 {
   font-size: 1.5em;
-  margin: 10px 0px 10px 0px;
-}
+  margin: 10px 0px 10px 0px; }
 
 h6 {
   font-size: 1em;
   margin: 10px 0px 10px 0px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 p {
   font-size: 1em;
   margin: 10px 0px 10px 0px;
-  color: #fff;
-}
+  color: #fff; }
 
 a {
   font-size: 1em;
   text-decoration: none;
-  color: #006bdb;
-}
+  color: #006bdb; }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    LINKS 	    	//////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 a:hover {
-  color: red;
-}
+  color: red; }
 
 a:active {
-  color: green;
-}
+  color: green; }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    BUTTONS     	//////////////////////////////////////////////////////////////// */
@@ -101,21 +86,19 @@ a:active {
 .button {
   background: transparent;
   padding: 10px 25px;
-  color: #000;
+  color: green;
   font-weight: 800;
   transition: background 0.5s, border 0.5s, color 0.5s;
   border: 3px solid #000;
   display: block;
   max-width: 200px;
   text-align: center;
-  margin: 10px auto;
-}
+  margin: 10px auto; }
 
 .button:hover {
   color: #000;
   background: #ddd;
-  border: 3px solid #333;
-}
+  border: 3px solid #333; }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    HEADER & NAV   //////////////////////////////////////////////////////////////// */
@@ -125,8 +108,7 @@ a:active {
   height: 60px;
   width: 100%;
   z-index: 5000;
-  position: fixed;
-}
+  position: fixed; }
 
 #logo {
   position: absolute;
@@ -136,8 +118,7 @@ a:active {
   width: 50px;
   cursor: pointer;
   z-index: 1010;
-  background: #006bdb;
-}
+  background: #006bdb; }
 
 .button_container {
   position: absolute;
@@ -147,30 +128,25 @@ a:active {
   width: 35px;
   cursor: pointer;
   z-index: 100;
-  -webkit-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
-}
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease; }
 
 .button_container:hover {
-  opacity: .8;
-}
+  opacity: .8; }
 
 .button_container.active .top {
   -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
   transform: translateY(11px) translateX(0) rotate(45deg);
-  background: #006bdb;
-}
+  background: #006bdb; }
 
 .button_container.active .middle {
   opacity: 0;
-  background: #006bdb;
-}
+  background: #006bdb; }
 
 .button_container.active .bottom {
   -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
   transform: translateY(-11px) translateX(0) rotate(-45deg);
-  background: #006bdb;
-}
+  background: #006bdb; }
 
 .button_container span {
   background: #006bdb;
@@ -180,18 +156,15 @@ a:active {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-  cursor: pointer;
-}
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+  cursor: pointer; }
 
 .button_container span:nth-of-type(2) {
-  top: 11px;
-}
+  top: 11px; }
 
 .button_container span:nth-of-type(3) {
-  top: 22px;
-}
+  top: 22px; }
 
 .overlay {
   position: fixed;
@@ -202,38 +175,32 @@ a:active {
   height: 0%;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-  overflow: hidden;
-}
+  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden; }
 
 .overlay.open {
   opacity: 0.95;
   visibility: visible;
-  height: 100%;
-}
+  height: 100%; }
 
 .overlay.open li {
-  -webkit-animation: fadeInTop 0.5s ease forwards;
-  animation: fadeInTop 0.5s ease forwards;
+  -webkit-animation: fadeInTop .5s ease forwards;
+  animation: fadeInTop .5s ease forwards;
   -webkit-animation-delay: .35s;
-  animation-delay: .35s;
-}
+  animation-delay: .35s; }
 
 .overlay.open li:nth-of-type(2) {
   -webkit-animation-delay: .4s;
-  animation-delay: .4s;
-}
+  animation-delay: .4s; }
 
 .overlay.open li:nth-of-type(3) {
   -webkit-animation-delay: .45s;
-  animation-delay: .45s;
-}
+  animation-delay: .45s; }
 
 .overlay.open li:nth-of-type(4) {
   -webkit-animation-delay: .50s;
-  animation-delay: .50s;
-}
+  animation-delay: .50s; }
 
 .overlay nav {
   position: relative;
@@ -244,8 +211,7 @@ a:active {
   font-size: 50px;
   font-family: 'Oxygen', serif;
   font-weight: 400;
-  text-align: center;
-}
+  text-align: center; }
 
 .overlay ul {
   list-style: none;
@@ -253,8 +219,7 @@ a:active {
   margin: 0 auto;
   display: inline-block;
   position: relative;
-  height: 100%;
-}
+  height: 100%; }
 
 .overlay ul li {
   display: block;
@@ -262,20 +227,17 @@ a:active {
   height: calc(100% / 4);
   min-height: 50px;
   position: relative;
-  opacity: 0;
-}
+  opacity: 0; }
 
 .overlay ul li a {
   display: block;
   position: relative;
   color: #FFF;
   text-decoration: none;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-  width: 100%;
-}
+  width: 100%; }
 
 .overlay ul li a:after {
   content: '';
@@ -288,20 +250,15 @@ a:active {
   height: 3px;
   background: #FFF;
   -webkit-transition: .35s;
-  transition: .35s;
-}
+  transition: .35s; }
 
 @-webkit-keyframes fadeInTop {
   0% {
     opacity: 0;
-    top: 20%;
-  }
+    top: 20%; }
   100% {
     opacity: 1;
-    top: 0;
-  }
-}
-
+    top: 0; } }
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    MAIN 	    	//////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
@@ -311,16 +268,14 @@ a:active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 95vh;
-}
+  height: 95vh; }
 
 .main-content {
   margin-top: 10%;
   padding: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
-}
+  color: white; }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    INTRO      	//////////////////////////////////////////////////////////////// */
@@ -328,37 +283,29 @@ a:active {
 .intro {
   background-color: #fff;
   text-align: center;
-  color: #111;
-  height: 90vh;
-}
+  color: #111; }
 
 .intro .grid-pad {
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 .intro .col-1-3 {
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 .intro .col-1-3 li {
-  list-style: none;
-}
+  list-style: none; }
 
 .intro img {
   margin: 20px 0px 20px 0px;
   height: 150px;
   border-radius: 100%;
   border: 2px solid #333;
-  transition: border 0.4s;
-}
+  transition: border 0.4s; }
 
 .intro .col-2-12 .content {
-  text-align: center;
-}
+  text-align: center; }
 
 .intro .content img:hover {
-  border: 2px solid #111;
-}
+  border: 2px solid #111; }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    ABOUT      	//////////////////////////////////////////////////////////////// */
@@ -370,12 +317,10 @@ a:active {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 90vh;
-}
+  height: 90vh; }
 
 .about p {
-  margin: 20px 0px 20px 0px;
-}
+  margin: 20px 0px 20px 0px; }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    PROJECTS     	//////////////////////////////////////////////////////////////// */
@@ -383,98 +328,82 @@ a:active {
 .projects {
   text-align: center;
   background-color: rgba(17, 17, 17, 0);
-  height: 90vh;
-}
+  height: 90vh; }
 
 .projects img {
-  width: 100%;
-}
+  width: 100%; }
 
 .projects .col-1-6 {
   padding: 20px 0px 10px 0px;
-  transition: background 0.4s;
-}
+  transition: background 0.4s; }
 
 .projects .col-1-6:hover {
-  background: red;
-}
+  background: red; }
 
 .projects p, .projects h2, .projects h3 {
-  color: #111;
-}
+  color: #111; }
 
 /* //////////////////////////					          //////////////////////////////////////////////////////////////// */
 /* //////////////////////////    EMPLOYMENT     //////////////////////////////////////////////////////////////// */
 /* //////////////////////////					           //////////////////////////////////////////////////////////////// */
 .employment {
   background-color: #006bdb;
-  text-align: left;
-}
+  text-align: left; }
 
 .employment img {
   margin: 20px 0px 20px 0px;
   height: 125px;
   border-radius: 100%;
   border: 2px solid #fff;
-  transition: border 0.4s;
-}
+  transition: border 0.4s; }
 
 .employment img:hover {
-  border: 2px solid #fff;
-}
+  border: 2px solid #fff; }
 
 .employment ul li {
   list-style-type: none;
-  padding: 0px 0px 20px 0px;
-}
+  padding: 0px 0px 20px 0px; }
 
-.employment ul, p, h2, h3, h4 {
-  color: #fff;
-}
+.employment h2 {
+  color: #fff; }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    CONTACT    	//////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .contact {
-  background-color: rgba(17, 17, 17, 0);
-}
+  background-color: rgba(17, 17, 17, 0); }
 
 .contact h2 {
-  color: #fff;
-}
+  color: #fff; }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    BLOG 	   	 	//////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 .blog {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .blog h2, .blog h3, .blog p {
-  color: #000;
-}
+  color: #000; }
 
 .blog h2 {
-  margin: 0px 0px 20px 0px;
-}
+  margin: 0px 0px 20px 0px; }
 
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 /* //////////////////////////    FOOTER     	//////////////////////////////////////////////////////////////// */
 /* //////////////////////////					//////////////////////////////////////////////////////////////// */
 footer {
-  background-color: #fff;
-  padding: 30px 0px 0px 0px;
-}
+  background-color: #333;
+  padding: 30px 0px 0px 0px; }
 
 footer h6 {
   color: #006bdb;
-}
+  padding: 0px 0px 0px 20px; }
 
 /* //////////////////////////					 //////////////////////////////////////////////////////////////// */
 /* //////////////////////////    MEDIA QUERIES   //////////////////////////////////////////////////////////////// */
 /* //////////////////////////					 //////////////////////////////////////////////////////////////// */
 @media only screen and (max-width: 767px) {
   .main-content {
-    margin-top: 25%;
-  }
-}
+    margin-top: 25%; } }
+
+/*# sourceMappingURL=style.css.map */
