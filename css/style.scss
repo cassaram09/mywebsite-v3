@@ -5,9 +5,9 @@
 */
 
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    GLOBALS     	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+
+/* ------------- GLOBALS ------------- */
+
 
 @mixin background-size($cover){
   -webkit-background-size: $cover;
@@ -17,7 +17,7 @@
 }
 
 html, body {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Questrial", Verdana, "Oxygen", Geneva, sans-serif;
   font-weight: 100; 
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 section {
-	padding: 30px 0px 30px 0px;
+	padding: 100px 0px 100px 0px;
 }
 
 
@@ -48,9 +48,8 @@ section {
 
 */
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    COLORS     	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+
+/* ------------- COLORS ------------- */
 
 $primary-color: #fff;
 $second-color: #006bdb;
@@ -61,56 +60,67 @@ $second-accent-color: #333;
 $font-light: $accent-color;
 $font-dark: $primary-color;
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    TEXT STYLES    //////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* ------------- TEXT STYLES ------------- */
+
+$heading-font: "Oxygen";
+$body-font: "Questrial";
 
 h1 {
-	font-size: 3.5em;
+	font-size: 3.6em;
 	margin: 40px 0px 40px 0px;
+  text-shadow: 1px 2px #111;
+  font-family: $heading-font;
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2.5em;
 	margin: 10px 0px 30px 0px;
+  font-family: $body-font;
 }
 
 h3 {
-	font-size: 2.5em;
+	font-size: 2.2em;
 	margin: 10px 0px 10px 0px;
+  font-family: $heading-font;
 }
 
 h4 {
 	font-size: 2em;
 	margin: 10px 0px 10px 0px;
+  font-family: $heading-font;
 }
 
 h5 {
 	font-size: 1.5em;
 	margin: 10px 0px 10px 0px;
+  font-family: $heading-font;
 }
 
 h6 {
 	font-size: 1em;
 	margin: 10px 0px 10px 0px;
 	text-transform: uppercase;
+  font-family: $heading-font;
+}
+
+a, p, li {
+  font-family: $body-font;
+  font-size: 1em;
 }
 
 p {
-	font-size: 1em;
 	margin: 10px 0px 10px 0px;
   color: $font-dark;
 }
 
 a {
-	font-size: 1em;
   text-decoration: none;
   color: $second-color;
 }
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    LINKS 	    	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+
+
+/* ------------- LINKS ------------- */
 
 a:hover {
 	color: red;
@@ -120,36 +130,41 @@ a:active {
 	color: green;
 }
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    BUTTONS     	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* ------------- BUTTONS ------------- */
 
 .button{
-	background: rgba(0,0,0,0);
+	background: #fff;
 	padding: 10px 25px;
-	color: red;
-	font-weight: 800;
+	color: #111;
+	font-weight: 500;
+  
 	transition: background 0.5s, border 0.5s, color 0.5s;
-	border: 3px solid #000;
+	border: 3px solid #aaa;
 	display: block;
-	max-width: 200px;
+	max-width: 300px;
 	text-align: center;
 	margin: 10px auto;
 }
 
 .button:hover{
-	color: #000;
-	background: #ddd;
-	border: 3px solid #333;
+	color: #fff;
+	background: rgba(255,255,255,0.05);
+	border: 3px solid #fff;
+}
+
+.button-main{
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 55px;
+  font-size: 1.5em;
+  font-family: $heading-font;
 }
 
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    HEADER & NAV   //////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* ------------- HEADER & NAV ------------- */
 
 #nav-block {
-	background: $primary-color;
+	background: #111;
 	height: 60px;
 	width: 100%;
 	z-index: 5000;
@@ -165,6 +180,13 @@ a:active {
   cursor: pointer;
   z-index: 1010;
 	background: $second-color;
+}
+
+#logo img {
+  height: auto;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 100%;
 }
 
 .button_container {
@@ -332,51 +354,52 @@ a:active {
 }
 
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    MAIN 	    	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* ------------- MAIN------------- */
 
 .main {
-	background: url("../img/brooklyn-bridge.jpg") no-repeat center center fixed; 
+	background: url("../img/graffiti2.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 95vh;
+	height: 100vh;
+  min-height: 800px;
 }
 
 .main-content {
-	margin-top: 10%;
+	margin-top: 15vh;
 	padding: 20px;
 	text-align: center;
-	text-transform: uppercase;
 	color: white;
+  max-width: 960px;
+  height: 100vh;
 }
 
+.main h2{
+  text-shadow: 1px 1px #222;
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    INTRO      	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+}
+/* ------------- SKILLS ------------- */
 
-.intro {
+.skills {
 	background-color: $primary-color;
 	text-align: center;
   color: $font-light;
 }
 
-.intro .grid-pad {
+.skills .grid-pad {
 	padding-bottom: 10px;
 }
 
-.intro .col-1-3{
+.skills .col-1-3{
 	
 	padding-bottom: 10px;
 }
-.intro .col-1-3 li {
+.skills .col-1-3 li {
 	list-style: none;
 }
 
-.intro img {
+.skills img {
 	margin: 20px 0px 20px 0px;
 	height: 150px;
 	border-radius: 100%;
@@ -384,36 +407,34 @@ a:active {
 	transition: border 0.4s;
 }
 
-.intro .col-2-12 .content {
+.skills .col-2-12 .content {
 	text-align: center;
 }
 
-.intro .content img:hover {
+.skills .content img:hover {
 	border: 2px solid $accent-color;
 }
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    ABOUT      	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* ------------- ABOUT ------------- */
 
 .about{
 	text-align: justify;
-	background: linear-gradient(to top, rgba(17,17,17,0), rgba(17,17,17,1)) ; 
+	background: #ddd ; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-  height: 90vh;
+
+  
 }
 
 .about p {
 	margin: 20px 0px 20px 0px;
+  color: #000;
 }
 
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    PROJECTS     	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* ------------- PROJECTS ------------- */
 
 .projects{
 	text-align: center;
@@ -439,9 +460,7 @@ a:active {
 	color: #111;
 }
 
-/* //////////////////////////					          //////////////////////////////////////////////////////////////// */
-/* //////////////////////////    EMPLOYMENT     //////////////////////////////////////////////////////////////// */
-/* //////////////////////////					           //////////////////////////////////////////////////////////////// */
+/* ------------- EMPLOYMENT------------- */
 
 .employment{
 	background-color: $second-color;
@@ -461,9 +480,14 @@ a:active {
 	border: 2px solid $primary-color;
 }
 
+.employment p{
+
+}
+
 .employment ul li{
 	list-style-type: none;
 	padding: 0px 0px 20px 0px;
+  color: #fff;
 }
 
 
@@ -472,10 +496,7 @@ a:active {
 	color: #fff;
 }
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    CONTACT    	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-
+/* ------------- CONTACT ------------- */
 
 .contact{
 	background-color: rgba(17,17,17,0);
@@ -486,9 +507,7 @@ a:active {
   color: $primary-color;
 }
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    BLOG 	   	 	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* ------------- BLOG ------------- */
 
 .blog{
 	background-color: $primary-color;
@@ -503,13 +522,11 @@ a:active {
 }
 
 
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
-/* //////////////////////////    FOOTER     	//////////////////////////////////////////////////////////////// */
-/* //////////////////////////					//////////////////////////////////////////////////////////////// */
+/* ------------- FOOTER ------------- */
 
 
 footer{
-	background-color: #333;
+	background-color: #111;
 	padding:30px 0px 0px 0px;
 }
 
@@ -519,12 +536,13 @@ footer h6 {
 }
 
 
-/* //////////////////////////					 //////////////////////////////////////////////////////////////// */
-/* //////////////////////////    MEDIA QUERIES   //////////////////////////////////////////////////////////////// */
-/* //////////////////////////					 //////////////////////////////////////////////////////////////// */
+/* ------------- MEDIA QUERIES ------------- */
 
 @media only screen and (max-width: 767px) {
 	.main-content {
 	margin-top: 25%;
+  h1, h2 {
+    font-size: 1.5em;
+  }
 	}
 }
